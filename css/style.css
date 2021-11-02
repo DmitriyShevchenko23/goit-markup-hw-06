@@ -221,6 +221,22 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
+
+.button-hero {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
 .backdrop {
   position: fixed;
   opacity: 1;
@@ -272,24 +288,29 @@ img {
   background-color: var(--primary-white-color);
   cursor: pointer;
 }
-.close-icon {
+.modal-form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.button-hero {
-  min-width: 200px;
-  height: 50px;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border-color: transparent;
+.form-titel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 
-  font-family: roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+  color: var(--title-text-color);
 }
-
+.modal-form-list {
+}
+.modal-form-item {
+}
+.modal-form {
+}
+.form-label {
+}
+.form-input {
+}
 /* секция ПРЕИМУЩЕСТВА(BENEFITS) страница "студия"------------- */
 .visually-hidden {
   position: absolute;
@@ -523,7 +544,7 @@ img {
 }
 
 .social-footer {
-  display: block;
+  margin-right: 93px;
 }
 .social-titel {
   margin-bottom: 20px;
@@ -564,6 +585,45 @@ img {
   width: 44px;
   height: 44px;
   border: none;
+}
+
+.subscribe-footer {
+}
+.subscribe-footer-block {
+  display: flex;
+  align-items: center;
+}
+.subscribe-form {
+  margin-right: 12px;
+}
+.subscribe-label {
+}
+.subscribe-input {
+  padding: 15px 0 15px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--primary-white-color);
+}
+.button-subscribe {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.icon-send {
+  margin-left: 10px;
 }
 /* СТРАНИЦА портфолио ----------------------------------*/
 /* кнопки навигации */
