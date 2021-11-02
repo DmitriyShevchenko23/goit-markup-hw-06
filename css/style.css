@@ -598,7 +598,8 @@ img {
 .subscribe-label {
 }
 .subscribe-input {
-  padding: 15px 0 15px 0;
+  padding: 15px 0 15px 16px;
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
