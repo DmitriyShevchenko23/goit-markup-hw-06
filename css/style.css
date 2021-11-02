@@ -591,7 +591,6 @@ img {
 }
 .subscribe-footer-block {
   display: flex;
-  align-items: center;
 }
 .subscribe-form {
   margin-right: 12px;
