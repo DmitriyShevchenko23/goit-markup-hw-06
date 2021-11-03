@@ -287,6 +287,11 @@ img {
   border-radius: 50%;
   background-color: var(--primary-white-color);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal-icon:hover,
+.close-modal-icon:focus {
+  fill: var(--accent-color);
 }
 .modal-form-block {
   padding: 40px;
@@ -305,6 +310,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  padding-top: 18px;
 }
 .modal-form-item:not(:last-child) {
   margin-bottom: 10px;
@@ -313,13 +320,34 @@ img {
   margin-bottom: 20px;
 }
 .form-label {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 .form-input {
-  padding: 11px 0;
+  padding: 11px 0 11px 42px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
 }
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
 .form-textarea {
   padding: 12px 16px;
   width: 100%;
@@ -327,19 +355,51 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-textarea:focus {
+  border-color: var(--accent-color);
 }
 .form-checkbox {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .policy-link {
   color: var(--accent-color);
 }
 .checkbox-label {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.checkbox-icon {
+  margin-right: 7px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+  transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:checked + .checkbox-icon,
+.checkbox-input:focus + .checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
 }
 /* секция ПРЕИМУЩЕСТВА(BENEFITS) страница "студия"------------- */
 .visually-hidden {
