@@ -689,9 +689,9 @@ img {
   display: flex;
 }
 .subscribe-label {
+  margin-right: 12px;
 }
 .subscribe-input {
-  margin-right: 12px;
   padding: 15px 0 15px 16px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
