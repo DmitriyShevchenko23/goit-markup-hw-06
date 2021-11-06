@@ -45,6 +45,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .container {
   width: 1200px;
@@ -405,16 +415,7 @@ img {
   background-origin: border-box;
 }
 /* секция ПРЕИМУЩЕСТВА(BENEFITS) страница "студия"------------- */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
+
 .benefits-list {
   display: flex;
 }
